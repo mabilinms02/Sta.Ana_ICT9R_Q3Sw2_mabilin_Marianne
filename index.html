@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--head start-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<title>Movie Reviews</title>
+		<link rel="icon" type="image/x-icon" href="favicon.jpg">
+	<!-------html style------->
+		<style type="text/css">
+			body {
+				background-image: url(bg.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+			#spc {
+				width: 50%;
+				background-color: #808080;
+			}
+
+			table, td {
+				border: 3px solid white;
+				border-left: none;
+				border-right: none;
+				margin: auto;
+				text-align: center;
+				margin-top: 3%;
+				font-family: times new roman;
+			}
+			.td {
+				padding: 25px;
+			}
+			img {
+				width: 200px;
+			}
+			#text1 {
+				background-color: #C10A0A;
+				color: white;
+				font-size: 40px;
+			}
+			#text2 {
+				background-color: #C10A0A;
+				color: white;
+				font-size: 25px;
+				padding: 10px;
+			}
+			.p {
+				color: white;
+				font-size: 15px;
+			}
+			.info {
+				padding: 5px;
+			}
+			.link:link {
+				color: blue;
+			}
+			.link:visited {
+				color: red;
+			}
+		</style>
+
+	</head>
+	<!--body start-->
+	<body>
+	<!-------Tags/Forms------->
+		<nav class="navbar navbar-expand-sm bg-secondary navbar-light p-2 ">
+			<!-------Brand/Logo------->
+			<i>
+				<a class="navbar-brand p-3" href="#">
+					<img src="favicon1.jpg" alt="R Logo" style="width: 50px;" class="rounde-pill">
+				</a>
+			</i>
+			<!-------Links------->
+			<ul class="navbar-nav me-auto">
+				<!-------link1------->
+				<li class="nav-item spc">
+					<h5><a class="nav-link btn-sm text-light text-dark" href="#">Home</a></h5>
+				</li>
+				<!-------link2------->
+				<li class="nav-item">
+					<h5><a class="nav-link btn-sm text-light text-dark" href="#">Movies</a></h5>
+				</li>
+				<!-------link3------->
+				<li class="nav-item">
+					<h5><a class="nav-link btn-sm text-light text-dark" href="#">Genre</a></h5>
+				</li>
+				<!-------link4------->
+				<li class="nav-item">
+					<h5><a class="nav-link btn-sm text-light text-dark" href="#">Contact Us</a></h5>
+				</li>
+			<!-------Dropdown------->
+			<div class="dropdown">
+				<h6><a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">others</a>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<li><a class="dropdown-item" href="#">1</a></li>
+					<li><a class="dropdown-item" href="#">2</a></li>
+					<li><a class="dropdown-item" href="#">3</a></li>
+				</ul>
+			</h6>
+			</div>
+			<!-------search------->
+			</ul>
+			<form class="d-flex">
+				<input class="form-control me-2" type="text" placeholder="Search" id="spc">
+			</form>
+			<a class="navbar-brand " href="https://www.google.com/search?q=movie+watch&sca_esv&safe=active&ssui=on">
+				<i class="bi bi-search"></i>
+			</a>
+		</nav>
+		<!-------icontents------->
+		<table>
+			<tr id="text1">
+				<th colspan="3">Movie Reviews</th>
+			</tr>
+			<tr id="text2">
+				<td>Movies</td>
+				<td>Description</td>
+				<td>Rating</td>
+			</tr>
+			<tr class="p">
+				<td class="td">
+					<img src="1.jpg" alt="#1" class="img">
+				</td>
+				<td class="td info">The Bonifacio siblings reunite when they learn<br> that their father has been diagnosed with cancer.<br> In the process, they must deal with their<br> unresolved issues before it's too late.</td>
+				<td class="td">
+					<h6>7.5/10<br>★★★★★★★☆☆☆</h6>
+				</td>
+			</tr>
+			<tr class="p">
+				<td class="td">
+					<img src="2.jpg" alt="#2" class="img">
+				</td>
+				<td class="td info">Mary loves John her entire life.<br> After years of marriage, John's priorities change,<br> straining their relationship and leading to a tragic accident that takes Mary's life.<br> An extraordinary proposition allows John to rewind time.</td>
+				<td class="td">
+					<h6>7.4/10<br>★★★★★★★☆☆☆</h6>
+				</td>
+			</tr>
+			<tr class="p">
+				<td class="td">
+					<img src="3.jpg" alt="#3" class="img">
+				</td>
+				<td class="td info">This tear-jerking dramedy centers on a family<br> whose members squabble over who will take care<br> of their stroke-stricken father.</td>
+				<td class="td">
+					<h6>6.5/10<br>★★★★★★☆☆☆☆</h6>
+				</td>
+			</tr>
+		</table>
+		<!-------Sources------->
+		<footer class="bg-secondary mt-5 text-light text-center">
+			<h5>Sources:</h5>
+			<li><a href="https://www.imdb.com/title/tt7502214/" class="link">Seven Sundays (2017)</a></li>
+			<li><a href="https://www.imdb.com/title/tt28152455/" class="link">Rewind (2023)</a></li>
+			<li><a href="https://www.imdb.com/title/tt25145532/" class="link">Family Matters (2022)</a></li>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	</body>
+</html>
